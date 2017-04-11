@@ -1,6 +1,5 @@
 import json
 from pprint import pprint
-
 import pandas as pd
 import numpy as np
 from sklearn.tree import DecisionTreeClassifier, export_graphviz
@@ -18,5 +17,8 @@ from sklearn.feature_extraction import DictVectorizer
 vec = DictVectorizer()
 
 vec.fit_transform(data).toarray()
-vec.get_feature_names()
+print(vec.get_feature_names())
 
+# # Create a decision tree classifier
+# clf = DecisionTreeClassifier()
+# clf = clf.fit(data)
