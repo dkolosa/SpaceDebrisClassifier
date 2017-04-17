@@ -3,6 +3,7 @@
 \usepackage[english]{babel}
 \usepackage{setspace}
 \usepackage{geometry}
+\usepackage{graphicx}
 
 \newgeometry{left=1in, top=1.25in, bottom=1.25in, right=1.5in}
 
@@ -56,17 +57,20 @@ graph here
 The plot shows that Russia (CIS), China (PRC), and the United States (US) have launched the most objects into space over the span of the beginning of the space program. 
 
 As mentioned earlier, the dataset provided contains not only debris but also other objects. The figure below shows what kind of objects and how many objects are in each category.
-\\
-graph here
-\\
+\begin{center}
+	\includegraphics[scale=0.3]{figures/RCS_size.png}
+	\captionof{figure}{Distribution of object size}
+	\label{fig:RCS_size}
+\end{center}
 It can be seen from the figure above, that debris make up a significant amount of objects of the dataset. Another interesting plot to look at is the number of objects for the three different sizes.
-\\
-graph here
-\\
-
+\begin{center}
+	\includegraphics[scale=0.3]{figures/object_types.png}
+	\captionof{figure}{Number of objects by object type}
+	\label{fig:object_types}
+\end{center}
 Looing at the plot above it can be seen that the most objects in the dataset have a small cross section. This gives a good visualization of what kind of debris is in orbit. 
 
-Now the statistical model will be looked at. The figure below shows a plot displaying the objects in the dataset by cross section and the mean orbit spped.  
+Now the statistical model will be looked at. The dataset used was the orbital speed and the radar cross section. The data was split into the training and test data with 80\% being the traiing data and 20\% being the test data. The training data was then fitted to a k-means classfier with 3 clusters. Each cluseter designates the size of the radar cross section, small, medium, and large. The figure below shows a plot displaying the objects in the dataset by cross section and the mean orbit spped.  
 
 
 \section{Conclusion}
