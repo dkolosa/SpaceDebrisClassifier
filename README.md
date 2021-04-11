@@ -8,11 +8,8 @@ resulting in a training and test accuracy of 70% and 68%, respectively.
 
 ## Requirements
 python > 3
-
 pandas
-
 sklearn
-
 jypyter-notebook
 
 ## Usage
