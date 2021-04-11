@@ -16,4 +16,4 @@ sklearn
 jypyter-notebook
 
 ## Usage
-All data exploration, model training, and results are found in [`SPclassifier.ipynb`](https://github.com/dkolosa/SpaceDebrisClassifier/blob/master/SPclassifier.ipynb)
+The implementation for this repository is found in [`SPclassifier.ipynb`](https://github.com/dkolosa/SpaceDebrisClassifier/blob/master/SPclassifier.ipynb)
